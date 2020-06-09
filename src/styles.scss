@@ -1,1 +1,118 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "lumos";
+    src: url("assets/fonts/LUMOS.woff");
+  }
+
+  @font-face {
+    font-family: "hp";
+    src: url("assets/fonts/ParryHotter.woff");
+  }
+
+
+html,
+body {
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url("/assets/bg.jpg");
+  font-family:  "lumos","hp", cursive !important;
+}
+
+.container{
+    min-width: -webkit-fill-available;
+    min-height: 100vh;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.map-container {
+  background-image: url("/assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  height: 100vh;
+}
+
+.countdown-container {
+    background-image: url("/assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    color: aliceblue;
+    height: 100vh;
+}
+ 
+.flip{
+  -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+
+.wish{
+    font-size: 30px;
+    color: aliceblue;
+    text-align: -webkit-center;
+}
+
+.cake {
+    position: relative;
+    width: 150px;
+    bottom: 50px;
+    left: calc(50% - 75px);
+}
+.cake-layer {
+    position: relative;
+    width: 150px;
+    height: 25px;
+}
+.middle-layer {
+    height: 15px;
+}
+.cake-icing {
+    position: relative;
+    width: 150px;
+    height: 12px;
+    border-radius: 10px 10px 0 0;
+}
+.drip-container {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.cake-icing-drip {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 10px;
+    height: 20px;
+    border-radius: 10px;
+    z-index: 1; 
+}
+.drip-2 {
+    top: 0px;
+    left: 25px;
+    width: 10px;
+    height: 35px;
+}
+.drip-3 {
+    left: 40px;
+    height: 15px;
+}
+.top1 .cake-layer,
+.top1 .cake-icing {
+    width: 116px;
+    margin-left: 17px;
+    height: 15px;
+}
