@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
     font-family: "lumos";
-    src: url("assets/fonts/LUMOS.woff");
+    src: url("https://github.com/Maxcat33/jiggy/tree/master/src/assets/fonts/LUMOS.woff");
   }
 
   @font-face {
     font-family: "hp";
-    src: url("assets/fonts/ParryHotter.woff");
+    src: url("https://github.com/Maxcat33/jiggy/tree/master/src/assets/fonts/ParryHotter.woff");
   }
 
 
@@ -17,7 +17,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-image: url("/assets/bg.jpg");
+  background-image: url("https://github.com/Maxcat33/jiggy/tree/master/src/assets/bg.jpg");
   font-family:  "lumos","hp", cursive !important;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .map-container {
-  background-image: url("/assets/bg.jpg");
+  background-image: url("https://github.com/Maxcat33/jiggy/tree/master/src/assets/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: auto;
@@ -38,7 +38,7 @@ body {
 }
 
 .countdown-container {
-    background-image: url("/assets/bg.jpg");
+    background-image: url("https://github.com/Maxcat33/jiggy/tree/master/src/assets/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: auto;
