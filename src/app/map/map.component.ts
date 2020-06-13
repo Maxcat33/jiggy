@@ -15,37 +15,45 @@ export class MapComponent implements OnInit {
   titleShow: boolean = false;
   audio = new Audio();
   audio1 = new Audio();
-  constructor(private router:Router) {}
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   open() {
-    if(this.openmap){
+    if (this.openmap) {
       this.close();
-    }else{
+    } else {
       this.openmap = true;
+      this.play();
     }
-    this.play();
     //this.openmap = true;
-    setTimeout(() => this.close(),19000);
+    setTimeout(() => this.close(), 19000);
   }
 
   close() {
     this.openmap == false;
     this.fadeout = true;
-    setTimeout(() => {this.countdownShow = false, this.mapShow=false, this.titleShow = true, this.audio.pause(), this.hbdPlay()},5000);
+    setTimeout(() => {
+      (this.countdownShow = false),
+        (this.mapShow = false),
+        (this.titleShow = true),
+        this.hbdPlay();
+    }, 5000);
   }
 
-   play() {
-    this.audio.src = "assets/music/harry_potter.mp3";
-    this.audio.load();
-    this.audio.play();
+  play() {
+    if (this.audio.currentTime == 0) {
+      this.audio.src = 'assets/music/harry_potter.mp3';
+      this.audio.load();
+      this.audio.play();
+    }
   }
-  hbdPlay(){
-    this.audio1.src = "assets/music/DJ_BoBo_Happy_Birthday.mp3";
-    this.audio1.load();
-    this.audio1.play();
+  hbdPlay() {
+    this.audio.pause();
+    if (this.audio.currentTime == 0) {
+      this.audio1.src = 'assets/music/DJ_BoBo_Happy_Birthday.mp3';
+      this.audio1.load();
+      this.audio1.play();
+    }
   }
 }

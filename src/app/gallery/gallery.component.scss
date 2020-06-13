@@ -342,3 +342,70 @@ body {
 	transform: translate3d(200px,0,0);
 	opacity: 0;
 }
+
+
+
+.body-content.gallery {
+    columns: 4;
+    column-gap: 15px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.box-content {
+  z-index: -1;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    break-inside: avoid;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+}
+
+.box-content .image {
+    width: 100%;
+    position: relative;
+}
+
+.box-content .image img {
+    max-width: 100%;
+}
+
+.box-content .title {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    align-items: center;
+}
+
+.box-content .image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.219);
+    display: none;
+}
+
+.box-content .image:hover::before {
+    display: block;
+    cursor: pointer;
+}
+
+.box-content .title a {
+    color: #38443d;
+}
+
+.quote{
+	font-family: 'Poppins';
+	margin-top: 50%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
