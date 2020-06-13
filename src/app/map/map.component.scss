@@ -177,10 +177,10 @@ $brown: #615349;
 	}
 	.footsteps-1 {
 		.footstep {		
-			animation: 15s footsteps-1 ease 3s forwards;
+			animation: 15s footsteps-1 ease 3.2s forwards;
 		}
 		.scroll-name {
-			animation: 15s scroll-1 ease 3s forwards;
+			animation: 15s scroll-1 ease 3.2s forwards;
 		}
 	}
 	.footsteps-2 {
@@ -191,14 +191,7 @@ $brown: #615349;
 			animation: 15s scroll-2 ease 3.2s forwards;
 		}
     }
-    .footsteps-3 {
-		.footstep {
-			animation: 15s footsteps-2 ease 3.2s forwards;
-		}
-		.scroll-name {
-			animation: 15s scroll-2 ease 3.2s forwards;
-		}
-	}
+
 }
 
 
@@ -218,11 +211,6 @@ $brown: #615349;
 	100% { transform: translate(-180px, -25px) rotate(-90deg) }
 }
 
-@keyframes footsteps-3 {
-	0% { }
-	80% { transform: translate(-170px, -25px) rotate(-90deg) }
-	100% { transform: translate(-180px, -25px) rotate(-90deg) }
-}
 
 @keyframes scroll-1 {
 	10% { transform: translate(8px, -15px) }

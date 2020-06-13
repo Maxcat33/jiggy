@@ -9,7 +9,15 @@
   src: url("assets/fonts/ParryHotter.woff");
 }
 
+@font-face {
+    font-family: "Felipa";
+    src: url("assets/fonts/Felipa-Regular.woff");
+  }
+
+@import 'app/stars.scss';
+
 $brown: #615349;
+
 html,
 body {
   min-height: 100vh;
@@ -17,8 +25,9 @@ body {
   margin: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-image: url("assets/bg.jpg");
+ // background-image: url("assets/bg.jpg");
   font-family: "lumos", "hp", cursive !important;
+  cursor:auto !important;
 }
 
 .container {
@@ -30,7 +39,7 @@ body {
 }
 
 .map-container {
-  background-image: url("assets/bg.jpg");
+ // background-image: url("assets/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: auto;
@@ -38,12 +47,13 @@ body {
 }
 
 .countdown-container {
-  background-image: url("assets/bg.jpg");
+ // background-image: url("assets/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: auto;
   color: aliceblue;
   height: 100vh;
+      opacity: 0.8 !important;
 }
 
 .flip {
@@ -117,7 +127,7 @@ body {
 }
 
 .map-base.active {
-  animation: kenburns 20s 1, mask 5s 18s steps(69) 1;
+  animation: kenburns 17s 1, mask 5s 18s steps(69) 1;
   animation-fill-mode: forwards;
 }
 
@@ -326,3 +336,11 @@ body {
     margin: 4px 0 0 15px;
   }
 }
+
+
+.scroll-wish {
+    color: #51463f;
+    margin-top: 50%;
+    opacity: 0;
+    animation: fadein 10s 16s forwards;
+  }
