@@ -50,7 +50,7 @@ export class MapComponent implements OnInit {
   }
   hbdPlay() {
     this.audio.pause();
-    if (this.audio.currentTime == 0) {
+    if (this.audio1.currentTime == 0) {
       this.audio1.src = 'assets/music/DJ_BoBo_Happy_Birthday.mp3';
       this.audio1.load();
       this.audio1.play();
